@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8" />
+    <title>jquery.carousel.js</title>
+    <style>
+        .carousel, li {
+            height:200px; width:200px;
+        }
+        li {
+            background:red;
+        }
+    </style>
+</head>
+<body>
+
+<div id="wrap">
+    <h1>jQuery Carousel Examples</h1>
+   
+    <h2>Slideshow with one slide</h2>
+    <div class="carousel first">
+        <ul class="">
+            <li>asdfasdfasdf</li>
+        </ul>
+    </div>
+    
+    <h2>Slideshow with more slides</h2>
+    <div class="carousel second">
+        <ul class="">
+            <li>asdfasdfasdf</li>
+            <li>awer awertawter</li>
+            <li>taeaeaef gerfgae</li>
+        </ul>
+    </div>
+    
+</div>
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.carousel.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function () {
+    $('div.carousel').carousel({
+        fluid: false,
+        slideshow: 1.5,
+        showArrows: true,
+        transition: 'fade',
+        afterInit: function (carousel) {
+            alert(carousel);
+        },
+        onPrev: function () {
+            alert('back to the future');
+        },
+        onNext: function () {
+            alert('keep moving forward');
+        }
+    });
+});
+
+</script>
+
+</body>
+</html>
