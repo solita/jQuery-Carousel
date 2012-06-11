@@ -1,8 +1,7 @@
+// jQuery Carousel v0.4
+// Copyright (c) 2012 Solita Oy
+
 /*!
- * http://ajk.im/js/jquery.carousel.js v0.4
- *
- * Copyright (c) 2011-2012 Antti-Jussi Kovalainen
- *
  * Usage: $('ul.someElement').carousel({ options here });
  *
  * Options:
